@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<h1 style="font-family:verdana; font-size:300%; text-align:center">Enter your User_Name and Pass_Word </h1>
+
+
+<form action="{{url_for('Predict_page')}}" method="post">
+
+    <h3>Month</h3><input type="number" name="month" placeholder="Enter month"> <br>
+
+
+    <h3>Customer_visiting_website </h3> <input type="number"  name="customer_visiting_website" placeholder="Enter customer_visiting_website">
+
+    <h3>Seller_available</h3><input type="number" name="seller_available" placeholder="Enter seller_available"> <br>
+    <br>
+     <button style="font-size:25px; color:red;"> Predict </button>
+</form>
+
+<p>  {{r}}  {{result}}</p>
+
+{% endblock %}
+
+
+
+
+
+
+

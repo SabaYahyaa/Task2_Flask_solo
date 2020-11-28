@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+
+
+
+
+
+
+
+
+
+
+{% block body %}
+<h1 style="font-family:verdana; font-size:300%; text-align:center">Enter your User_Name and Pass_Word </h1>
+
+
+<form action="{{url_for('LogIn_page')}}" method="post">
+
+    <h3>User_Name </h3><input type="text" name="user" placeholder="Enter your user name"> <br>
+
+
+    <h3>Pass_Word </h3> <input type="text" style="-webkit-text-security: square;"  name="password" placeholder="Enter your pass word">
+    <button style="font-size:25px; color:red;"> Submit </button>
+</form>
+
+<p> Login {{s}} for user {{x}} with password of length: {{y}}</p>
+
+{% endblock %}
+
+
+
+
+
+
+

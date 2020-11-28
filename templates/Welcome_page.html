@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+    <form action="{{url_for('Status_page')}}" method="get">
+        <button style="color:red; font-size:300%;"> Check, Please </button>
+    </form>
+
+     <form action="{{url_for('LogIn_page')}}" method="get">
+        <button style="color:red; font-size:300%;"> LogIn, Please </button>
+    </form>
+
+     <form action="{{url_for('Predict_page')}}" method="get">
+        <button style="color:red; font-size:300%;"> Predict, Now </button>
+    </form>
+{% endblock %}
